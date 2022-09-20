@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <nav>
+        <ul style="float: right">
+            <li>  <a href="index.html"> Inicio </a></li>
+            <li> <a href="retrato.html">Retrato</a></li>
+            <li> <a href="documental.html">Documental </a> </li>
+           
+        </ul>
+            </nav>
+
+    <main style="text-align:left">
+      
+    <h2>Formulario de contacto</h2>
+
+   
+    
+    <form action="enviar.php" method="POST" enctype="multipart/form-data"> <!--es para crear un formulario
+    y rl multipart/form data es para q html entienda que se va a adjuntar algo. Esta en rel con el input type=file-->
+<label for="nombre"> Nombre</label>  <br>
+<input type="text" id="nombre" placeholder="Inserte su nombre" size="50" maxlength="10" name="nombre" required style="width: 40%; height: 35px;" > 
+   
+    <br><br>
+    <label for="correo"> Correo electrónico</label> <br>
+    <input type="email" id="correo" placeholder="Inserte su correo" maxleght="20" name="correo" size="44" required style="width: 40%; height: 35px;">
+    <br> <br>
+
+
+<label for="mensaje"> Mensaje</label> <br>
+<textarea name="mensaje" id="mensaje" cols="100" rows="5" style="width: 40%; height: 70px;" placeholder="Inserte su mensaje"></textarea>
+
+<br><br>
+
+<!-- 
+        Botones posibles:
+        <input type="button" value="enviar">
+        <button> enviar tercer boton </button>
+        <input type="reset">
+    -->
+
+    <input type="submit" value="Enviar" style="width: 40%; height: 35px; background-color: rgb(64, 141, 12); color: whitesmoke; text-transform: uppercase; font-weight: bold;">
+    <br>
+    <br><br>
+    
+    <br> <br>
+
+  
+   
+
+</form>
+ 
+</main>
+
+        <footer>
+            <p>
+                Derechos de autor <br> 2022
+            </p>
+    
+         
+        </footer>
+    
+        
+
+</body>
+
+
+
+</html>
